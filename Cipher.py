@@ -5,14 +5,6 @@
 #               the message in the smallest possible k x k matrix by row, rotating it 90 degrees clockwise, and
 #               printing each row, skipping the empty spaces in the mtrix
 
-#  Student Name: Mitchel Walker
-
-#  Student UT EID: mlw3852
-
-#  Course Name: CS 313E
-
-#  Unique Number: 50725
-
 #  Date Created: 2/5/2019
 
 #  Date Last Modified: 2/7/2019
@@ -27,8 +19,10 @@ def encrypt(string):
     m = k**2
     #create the array
     arr = []
+    #fill the array with the message - line by line
     for i in range(0,m,k):
         line = list(string[i:i+k])
+        #if a line has blank spaces at the end of it, fill in an asterisks to denote blank space
         while len(line)<k:
             line.append('*')
         arr.append(line)
