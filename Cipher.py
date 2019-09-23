@@ -1,11 +1,9 @@
-#  File: Cipher.py
+#!/usr/bin/env python
 
 #  Description: This program reads two text files, 'encrypt.txt' and 'decrypt.txt' and encrypts  and decrypts
 #               the given messages, and prints the respective results. The encryption algorithm involves putting
 #               the message in the smallest possible k x k matrix by row, rotating it 90 degrees clockwise, and
 #               printing each row, skipping the empty spaces in the mtrix
-
-#  Date Created: 2/5/2019
 
 #  Date Last Modified: 2/7/2019
 import math
